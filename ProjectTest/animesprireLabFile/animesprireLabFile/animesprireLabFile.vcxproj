@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{42E86DA4-9735-40E9-8621-9F96CD4E4F83}</ProjectGuid>
+    <RootNamespace>animesprireLabFile</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Samples\C++\DXUT\Core;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Samples\C++\DXUT\Optional;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;DXUTOpt.lib;winmm.lib;dxerr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\anisprite2\aniSprite\cBalloon.cpp" />
+    <ClCompile Include="..\..\..\anisprite2\aniSprite\cBat.cpp" />
+    <ClCompile Include="..\..\..\anisprite2\aniSprite\cD3DManager.cpp" />
+    <ClCompile Include="..\..\..\anisprite2\aniSprite\cD3DXFont.cpp" />
+    <ClCompile Include="..\..\..\anisprite2\aniSprite\cD3DXSpriteMgr.cpp" />
+    <ClCompile Include="..\..\..\anisprite2\aniSprite\cD3DXTexture.cpp" />
+    <ClCompile Include="..\..\..\anisprite2\aniSprite\cExplosion.cpp" />
+    <ClCompile Include="..\..\..\anisprite2\aniSprite\cKnight.cpp" />
+    <ClCompile Include="..\..\..\anisprite2\aniSprite\cSprite.cpp" />
+    <ClCompile Include="..\..\..\anisprite2\aniSprite\cXAudio.cpp" />
+    <ClCompile Include="..\..\..\anisprite2\aniSprite\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\anisprite2\aniSprite\cBalloon.h" />
+    <ClInclude Include="..\..\..\anisprite2\aniSprite\cBat.h" />
+    <ClInclude Include="..\..\..\anisprite2\aniSprite\cD3DManager.h" />
+    <ClInclude Include="..\..\..\anisprite2\aniSprite\cD3DXFont.h" />
+    <ClInclude Include="..\..\..\anisprite2\aniSprite\cD3DXSpriteMgr.h" />
+    <ClInclude Include="..\..\..\anisprite2\aniSprite\cD3DXTexture.h" />
+    <ClInclude Include="..\..\..\anisprite2\aniSprite\cExplosion.h" />
+    <ClInclude Include="..\..\..\anisprite2\aniSprite\cKnight.h" />
+    <ClInclude Include="..\..\..\anisprite2\aniSprite\cSprite.h" />
+    <ClInclude Include="..\..\..\anisprite2\aniSprite\cXAudio.h" />
+    <ClInclude Include="..\..\..\anisprite2\aniSprite\GameConstants.h" />
+    <ClInclude Include="..\..\..\anisprite2\aniSprite\GameResources.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\anisprite2\aniSprite\GameResources.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

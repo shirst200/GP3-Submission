@@ -1,0 +1,8 @@
+#include "GameResources.h"
+
+// --------------------------------------
+// Icons
+// --------------------------------------
+IDI_MyWindowIcon	ICON	"KnightSprite.ico"
+IDC_GUNSIGHT		CURSOR	"sword.cur"
+IDF_MyFont			FONT	"Fonts\\BATS.ttf"
